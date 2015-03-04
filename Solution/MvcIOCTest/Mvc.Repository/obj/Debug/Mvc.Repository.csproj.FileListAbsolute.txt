@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\bin\Debug\Mvc.Repository.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\bin\Debug\Mvc.Repository.pdb
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\obj\Debug\Mvc.Repository.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\obj\Debug\Mvc.Repository.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\obj\Debug\Mvc.Repository.pdb
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\bin\Debug\Mvc.IRepository.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\bin\Debug\Mvc.Models.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\bin\Debug\Mvc.IRepository.pdb
+C:\Users\Administrator\Desktop\示例项目\Source\Solution\MvcIOCTest\Mvc.Repository\bin\Debug\Mvc.Models.pdb

@@ -1,0 +1,13 @@
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\QrcodeUnit.exe
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\QrcodeUnit.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\obj\Debug\QrcodeUnit.csprojResolveAssemblyReference.cache
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\obj\Debug\QrcodeUnit.Properties.Resources.resources
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\obj\Debug\QrcodeUnit.csproj.GenerateResource.Cache
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\obj\Debug\QrcodeUnit.exe
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\obj\Debug\QrcodeUnit.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\obj\Debug\QrcodeUnit.Form1.resources
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\Qrcode.dll
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\zxing.dll
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\Qrcode.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\zxing.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Solution\QrcodeUnit\bin\Debug\zxing.xml

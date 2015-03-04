@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\Excel.NPOI.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\Excel.NPOI.pdb
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\NPOI.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\NPOI.OOXML.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\obj\Debug\Excel.NPOI.dll
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\obj\Debug\Excel.NPOI.pdb
+C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\obj\Debug\Excel.NPOI.csprojResolveAssemblyReference.cache

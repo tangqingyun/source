@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3773D9D-0EC4-4ECF-8294-2185CAC79926}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Basement.Framework</RootNamespace>
+    <AssemblyName>Basement.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\Reference\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="EmitMapper">
+      <HintPath>..\Reference\Utility\EmitMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel.NPOI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Excel.NPOI\bin\Debug\Excel.NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Reference\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\Reference\IBatis\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\Reference\IBatis\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\Reference\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Reference\Log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\Reference\MongoDrive\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\Reference\MongoDrive\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Reference\Serializable\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\Reference\ServiceStack.Redis\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\Reference\ServiceStack.Redis\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\Reference\ServiceStack.Redis\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\Reference\ServiceStack.Redis\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Mvc\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Reference\Mvc\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\Reference\Mvc\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttributeExt\AttributesExt.cs" />
+    <Compile Include="Collections\IKeyedObject.cs" />
+    <Compile Include="Collections\INamedObject.cs" />
+    <Compile Include="Collections\KeyedCollection.cs" />
+    <Compile Include="Collections\NamedCollection.cs" />
+    <Compile Include="Collections\NameObjectCollection.cs" />
+    <Compile Include="Common\ObjectCustomExtension.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="Common\SysBaseHandle.cs" />
+    <Compile Include="Configuration\AppSetting.cs" />
+    <Compile Include="Configuration\AppSettingItem.cs" />
+    <Compile Include="Configuration\DatabaseConfig.cs" />
+    <Compile Include="Configuration\DatabaseSection.cs" />
+    <Compile Include="Configuration\Framework.cs" />
+    <Compile Include="Configuration\FrameworkConfig.cs" />
+    <Compile Include="Configuration\GlobleConfig.cs" />
+    <Compile Include="Configuration\Log4NetConfig.cs" />
+    <Compile Include="Configuration\MongoSetting.cs" />
+    <Compile Include="Configuration\Monitoring.cs" />
+    <Compile Include="Configuration\MonitoringItem.cs" />
+    <Compile Include="CustomSerializer\BinarySerializer.cs" />
+    <Compile Include="CustomSerializer\ISerialize.cs" />
+    <Compile Include="Data\Attribute\ColumnAttribute.cs" />
+    <Compile Include="Data\Attribute\TableAttribute.cs" />
+    <Compile Include="Data\Configuration\Connection.cs" />
+    <Compile Include="Data\Configuration\ConnectionConfig.cs" />
+    <Compile Include="Data\Configuration\Database.cs" />
+    <Compile Include="Data\BaseDatabase.cs" />
+    <Compile Include="Data\Core\DataReaderExtensions.cs" />
+    <Compile Include="Data\Core\DataReaderExtensionsWithUncertainty.cs" />
+    <Compile Include="Data\Core\Entity.cs" />
+    <Compile Include="Data\Core\EntityProperty.cs" />
+    <Compile Include="Data\Enum\EnumAction.cs" />
+    <Compile Include="Data\ExecuteResult.cs" />
+    <Compile Include="Data\IDatabase.cs" />
+    <Compile Include="Data\IEntity.cs" />
+    <Compile Include="Data\MyBatisExtension.cs" />
+    <Compile Include="Data\Provider\PageEntity.cs" />
+    <Compile Include="Data\Provider\SqlServerLanguage.cs" />
+    <Compile Include="Data\Provider\SqlServer.cs" />
+    <Compile Include="Drawing\ImageExtension.cs" />
+    <Compile Include="Drawing\ImageVerification.cs" />
+    <Compile Include="Drawing\SecurityCode.cs" />
+    <Compile Include="EnumExt\EnumHttpMethod.cs" />
+    <Compile Include="EnumExt\EnumUtil.cs" />
+    <Compile Include="Excels\ExcelExtension.cs" />
+    <Compile Include="IExplorer\IExplorerExt.cs" />
+    <Compile Include="IO\BaseFile.cs" />
+    <Compile Include="IO\DirectoryExtension.cs" />
+    <Compile Include="IO\FolderExtension.cs" />
+    <Compile Include="IO\FileExtension.cs" />
+    <Compile Include="IO\PathExtension.cs" />
+    <Compile Include="IO\ZipFile.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\Enum\EnumLogLevel.cs" />
+    <Compile Include="Logging\LogProvider\ILogProvider.cs" />
+    <Compile Include="Logging\Log4NetLog.cs" />
+    <Compile Include="Logging\LogProvider\LogTextProvider.cs" />
+    <Compile Include="Logging\LogProvider\LogFactoryProvider.cs" />
+    <Compile Include="Logging\LogProvider\Log4NetProvider.cs" />
+    <Compile Include="Logging\Enum\EnumLogType.cs" />
+    <Compile Include="Mail\EmailList.cs" />
+    <Compile Include="Mail\Mail.cs" />
+    <Compile Include="Mail\SendMail.cs" />
+    <Compile Include="Mongo\BaseMongo.cs" />
+    <Compile Include="Mongo\BsonDocumentExtension.cs" />
+    <Compile Include="Mongo\MongoExt.cs" />
+    <Compile Include="MSMQ\Msmq.cs" />
+    <Compile Include="Mvc\AllowCrossDomainAttribute.cs" />
+    <Compile Include="Net\RemotePicture.cs" />
+    <Compile Include="Redis\RedisExt.cs" />
+    <Compile Include="Utility\Convert.cs" />
+    <Compile Include="Utility\HashHelper.cs" />
+    <Compile Include="Utility\MD5.cs" />
+    <Compile Include="Utility\SHA.cs" />
+    <Compile Include="Utility\StringHelper.cs" />
+    <Compile Include="Utility\Validator.cs" />
+    <Compile Include="WebApi\BaseApiController.cs" />
+    <Compile Include="Mvc\BaseBundleConfig.cs" />
+    <Compile Include="Mvc\BaseController.cs" />
+    <Compile Include="Mvc\BaseFilterConfig.cs" />
+    <Compile Include="Mvc\BaseRouteConfig.cs" />
+    <Compile Include="Mvc\BaseWebApiApplication.cs" />
+    <Compile Include="Mvc\BaseWebApiConfig.cs" />
+    <Compile Include="Mvc\BasicAuthenticationAttribute.cs" />
+    <Compile Include="Mvc\JsonFormatter.cs" />
+    <Compile Include="Mvc\WebErrorCatchModule.cs" />
+    <Compile Include="Net\HttpWeb.cs" />
+    <Compile Include="Net\IPAddress.cs" />
+    <Compile Include="Net\Mail.cs" />
+    <Compile Include="Net\NetHelper.cs" />
+    <Compile Include="Net\HttpUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AsymmetricEncryptionUtil.cs" />
+    <Compile Include="Security\Encryption.cs" />
+    <Compile Include="Security\HexUtil.cs" />
+    <Compile Include="Security\MD5Util.cs" />
+    <Compile Include="Security\SymmetricEncryptionUtil.cs" />
+    <Compile Include="Security\ValidateUtil.cs" />
+    <Compile Include="Serialization\BinaryFormatterWrapper.cs" />
+    <Compile Include="Serialization\ISerializer.cs" />
+    <Compile Include="Serialization\JsonSerializer.cs" />
+    <Compile Include="Serialization\SerializationMode.cs" />
+    <Compile Include="Serialization\Serializer.cs" />
+    <Compile Include="Serialization\SerializerBase.cs" />
+    <Compile Include="Serialization\XmlSerialize.cs" />
+    <Compile Include="Serialization\XmlSerializerWrapper.cs" />
+    <Compile Include="Utility\AttributeHandle.cs" />
+    <Compile Include="Utility\Base64.cs" />
+    <Compile Include="Utility\BrowserInfo.cs" />
+    <Compile Include="Utility\CacheAccess.cs" />
+    <Compile Include="Utility\CacheHelper.cs" />
+    <Compile Include="Utility\CharTool.cs" />
+    <Compile Include="Utility\CheckFormat.cs" />
+    <Compile Include="Utility\CollectionBase.cs" />
+    <Compile Include="Utility\CookieHelper.cs" />
+    <Compile Include="Utility\CPUPerformance.cs" />
+    <Compile Include="Utility\DateHelper.cs" />
+    <Compile Include="Utility\DateTimeTool.cs" />
+    <Compile Include="Utility\DESCryptography.cs" />
+    <Compile Include="EnumExt\EnumExt.cs" />
+    <Compile Include="Utility\EnvironmentUtility.cs" />
+    <Compile Include="Utility\FileDependencyCache.cs" />
+    <Compile Include="Utility\Header.cs" />
+    <Compile Include="Utility\HtmlTool.cs" />
+    <Compile Include="Utility\JsonHelper.cs" />
+    <Compile Include="Utility\ClientIP.cs" />
+    <Compile Include="Utility\MathHelper.cs" />
+    <Compile Include="Utility\ModelTo.cs" />
+    <Compile Include="Utility\ObjectClone.cs" />
+    <Compile Include="Utility\Parse.cs" />
+    <Compile Include="Utility\PinYing.cs" />
+    <Compile Include="Utility\ProxyHandle.cs" />
+    <Compile Include="Utility\ReflectHandle.cs" />
+    <Compile Include="Utility\RunningNumber.cs" />
+    <Compile Include="Utility\SimpleLog.cs" />
+    <Compile Include="Utility\SimpleMailHeler.cs" />
+    <Compile Include="Utility\Singleton.cs" />
+    <Compile Include="Utility\TypeParse.cs" />
+    <Compile Include="Utility\Utils.cs" />
+    <Compile Include="Utility\WebClientFile.cs" />
+    <Compile Include="Utility\WebConfigHandler.cs" />
+    <Compile Include="Web\AuthenticModule.cs" />
+    <Compile Include="Web\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ContentType.cs" />
+    <Compile Include="Web\ControlsExtension.cs" />
+    <Compile Include="Web\CookieUtils.cs" />
+    <Compile Include="Web\HttpLogModule.cs" />
+    <Compile Include="Web\Models\ModelError.cs" />
+    <Compile Include="Web\Models\ModelStateDictionary.cs" />
+    <Compile Include="Web\RequestHelper.cs" />
+    <Compile Include="Web\UrlHandle.cs" />
+    <Compile Include="Xml\IMultiNamespaceObject.cs" />
+    <Compile Include="Xml\XmlConverter.cs" />
+    <Compile Include="Xml\XmlSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cache\" />
+    <Folder Include="Memcache\" />
+    <Folder Include="Socket\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configs\Database.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Configs\Framework.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Configs\Log4Net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\CdcSqlMap.config" />
+    <None Include="Data\providers.config" />
+    <None Include="Data\SqlMap.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

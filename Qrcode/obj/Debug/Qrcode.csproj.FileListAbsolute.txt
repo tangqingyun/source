@@ -1,0 +1,8 @@
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\bin\Debug\Qrcode.dll
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\bin\Debug\Qrcode.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\obj\Debug\Qrcode.dll
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\obj\Debug\Qrcode.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\bin\Debug\zxing.dll
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\bin\Debug\zxing.pdb
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\bin\Debug\zxing.xml
+F:\qingyun.tang\My.Test.Projects\Source\Qrcode\obj\Debug\Qrcode.csprojResolveAssemblyReference.cache

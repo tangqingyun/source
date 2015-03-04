@@ -1,0 +1,1 @@
+"Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.2.186)(PORT=1521)))(CONNECT_DATA=(sid=ishop)));User Id=ishop_jsboc;Password=uni2uni;"
