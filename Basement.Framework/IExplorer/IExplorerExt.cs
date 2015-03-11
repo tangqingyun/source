@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Diagnostics;
 
 namespace Basement.Framework.IExplorer
 {
@@ -53,6 +54,16 @@ namespace Basement.Framework.IExplorer
                 }
             }
             return iewObject;
+        }
+
+        /// <summary>
+        /// 根据url退出
+        /// </summary>
+        /// <param name="url"></param>
+        public static void QuitIExplorerByLocationURL(string url)
+        {
+            SHDocVw.InternetExplorer obj = WindowObjectByLocationURL(url);
+            obj.Quit();
         }
 
         public static SHDocVw.InternetExplorer GetWindowObjectByLocationURL(String URL, int? millisecond = null)
@@ -132,11 +143,26 @@ namespace Basement.Framework.IExplorer
         /// <param name="select"></param>
         /// <param name="value"></param>
         public static void SelecedtOptionByText(HTMLSelectElement select, string text)
-        { 
+        {
             IHTMLOptionElement option = IExplorerExt.GetOptionElementByValue(select, text, 1);
             if (option != null)
                 option.selected = true;
         }
+
+        /// <summary>
+        /// 关闭ie进程
+        /// </summary>
+        public static void KillIEProcess()
+        {
+            foreach (Process p in Process.GetProcesses())
+            {
+                if (p.ProcessName == "iexplorer")
+                {
+                    p.Kill();
+                }
+            }
+        }
+
 
     }
 }
