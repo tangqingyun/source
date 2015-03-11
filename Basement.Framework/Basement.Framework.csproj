@@ -176,6 +176,7 @@
     <Compile Include="EnumExt\EnumHttpMethod.cs" />
     <Compile Include="EnumExt\EnumUtil.cs" />
     <Compile Include="Excels\ExcelExtension.cs" />
+    <Compile Include="IExplorer\IECache.cs" />
     <Compile Include="IExplorer\IExplorerExt.cs" />
     <Compile Include="IO\BaseFile.cs" />
     <Compile Include="IO\DirectoryExtension.cs" />
