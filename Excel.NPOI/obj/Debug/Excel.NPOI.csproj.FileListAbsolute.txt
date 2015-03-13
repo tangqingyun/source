@@ -8,3 +8,12 @@ C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\bin\Debug\NPOI.Ope
 C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\obj\Debug\Excel.NPOI.dll
 C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\obj\Debug\Excel.NPOI.pdb
 C:\Users\Administrator\Desktop\示例项目\Source\Excel.NPOI\obj\Debug\Excel.NPOI.csprojResolveAssemblyReference.cache
+F:\mygit\source\Excel.NPOI\bin\Debug\Excel.NPOI.dll
+F:\mygit\source\Excel.NPOI\bin\Debug\Excel.NPOI.pdb
+F:\mygit\source\Excel.NPOI\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\mygit\source\Excel.NPOI\bin\Debug\NPOI.dll
+F:\mygit\source\Excel.NPOI\bin\Debug\NPOI.OOXML.dll
+F:\mygit\source\Excel.NPOI\bin\Debug\NPOI.OpenXml4Net.dll
+F:\mygit\source\Excel.NPOI\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\mygit\source\Excel.NPOI\obj\Debug\Excel.NPOI.dll
+F:\mygit\source\Excel.NPOI\obj\Debug\Excel.NPOI.pdb

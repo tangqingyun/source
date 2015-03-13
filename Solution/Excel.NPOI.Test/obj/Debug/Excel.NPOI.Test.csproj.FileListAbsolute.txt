@@ -1,0 +1,12 @@
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\Excel.NPOI.Test.exe
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\Excel.NPOI.Test.pdb
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\Excel.NPOI.dll
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\NPOI.dll
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\NPOI.OOXML.dll
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\NPOI.OpenXml4Net.dll
+F:\mygit\source\Solution\Excel.NPOI.Test\bin\Debug\Excel.NPOI.pdb
+F:\mygit\source\Solution\Excel.NPOI.Test\obj\Debug\Excel.NPOI.Test.csprojResolveAssemblyReference.cache
+F:\mygit\source\Solution\Excel.NPOI.Test\obj\Debug\Excel.NPOI.Test.exe
+F:\mygit\source\Solution\Excel.NPOI.Test\obj\Debug\Excel.NPOI.Test.pdb

@@ -22,18 +22,21 @@ namespace Excel.NPOI
         /// 文件后缀
         /// </summary>
         private string ext;
-        private ISheet workSheet;       
+        public ISheet workSheet;
+        public IWorkbook workBook;
+
+        public ExcelNPOI() { }
         /// <summary>
         /// 带参构造函数
         /// </summary>
         /// <param name="path">传入文件绝对路径</param>
         /// <param name="sheetIndex">获取第几个表0第一个 1第二个</param>
-        public ExcelNPOI(string path,int sheetIndex=0)
+        public ExcelNPOI(string path, int sheetIndex = 0)
         {
             this.abPath = path;
             this.ext = Path.GetExtension(path);
             this.workSheet = this.GetSheets(ext, null)[sheetIndex];
-        }        
+        }
 
         /// <summary>
         /// 把Excel读入DataTable中
@@ -54,7 +57,8 @@ namespace Excel.NPOI
                     {
                         dt.Columns.Add(head.GetCell(i).StringCellValue);
                     }
-                    else {
+                    else
+                    {
                         dt.Columns.Add("无列名");
                     }
                 }
@@ -82,7 +86,7 @@ namespace Excel.NPOI
             }
 
             return dt;
-        }    
+        }
 
         /// <summary>
         /// 将DataTable生成Excel文件
@@ -90,8 +94,8 @@ namespace Excel.NPOI
         /// <param name="dt">传入DataTable</param>
         /// <param name="abPath">保存路径</param> 
         /// <param name="tableHead">设置导出Excel表头信息 如果为null 不设置</param>
-        public FileStream DataTableToExcelFile(DataTable dt, string savePath,string[] tableHead=null)
-        { 
+        public FileStream DataTableToExcelFile(DataTable dt, string savePath, string[] tableHead = null)
+        {
             if (dt != null && dt.Rows.Count > 0)
             {
                 try
@@ -139,10 +143,11 @@ namespace Excel.NPOI
                             {
                                 cell.SetCellValue(dt.Rows[i][j].ToString());
                             }
-                            else {
+                            else
+                            {
                                 cell.SetCellValue("");
                             }
-                           
+
                         }
                     }
 
@@ -165,17 +170,17 @@ namespace Excel.NPOI
             }
 
         }
-      
+
         /// <summary>
         /// 根据扩展名用不同的NPOI对象获取工作表
         /// </summary>
         /// <param name="ext">文件扩展名</param>
         /// <param name="sr">流资源 为null时读取文件路径资料 否则直接从流中读取</param>
         /// <returns></returns>
-        private List<ISheet> GetSheets(string ext,Stream sr)
+        public List<ISheet> GetSheets(string ext, Stream sr)
         {
             List<ISheet> list = new List<ISheet>();
-            Stream fs = sr==null?new FileStream(this.abPath, FileMode.Open):sr;
+            Stream fs = sr == null ? new FileStream(this.abPath, FileMode.Open) : sr;
             IWorkbook wb = null;
             switch (ext)
             {
@@ -195,9 +200,43 @@ namespace Excel.NPOI
                 list.Add(wb.GetSheetAt(i));
             }
             fs.Close();
+            workBook = wb;
             return list;
-        } 
-       
+        }
+
+        /// <summary>
+        /// 根据excel模板生成将datatable数据导入生成新的excel文件
+        /// </summary>
+        /// <param name="dt">DataTable</param>
+        /// <param name="newFile">要生成的新文件</param>
+        public void DataTableToExcelByTemplate(DataTable dt, string newFile)
+        {
+
+            int j = 1;
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                workSheet.GetRow(j).GetCell(0).SetCellValue(dt.Rows[i][0].ToString());
+                workSheet.GetRow(j).GetCell(1).SetCellValue(dt.Rows[i][1].ToString());
+                workSheet.GetRow(j).GetCell(2).SetCellValue(dt.Rows[i][2].ToString());
+                workSheet.GetRow(j).GetCell(3).SetCellValue(dt.Rows[i][3].ToString());
+                workSheet.GetRow(j).GetCell(4).SetCellValue(dt.Rows[i][4].ToString());
+                workSheet.GetRow(j).GetCell(5).SetCellValue(dt.Rows[i][5].ToString());
+                workSheet.GetRow(j).GetCell(6).SetCellValue(dt.Rows[i][6].ToString());
+                workSheet.GetRow(j).GetCell(7).SetCellValue(dt.Rows[i][7].ToString());
+                workSheet.GetRow(j).GetCell(8).SetCellValue(dt.Rows[i][8].ToString());
+                workSheet.GetRow(j).GetCell(9).SetCellValue(dt.Rows[i][9].ToString());
+                workSheet.GetRow(j).GetCell(10).SetCellValue(dt.Rows[i][10].ToString());
+                workSheet.GetRow(j).GetCell(11).SetCellValue(dt.Rows[i][11].ToString());
+                j++;
+            }
+            //是强制要求Excel在打开时重新计算的属性，在拥有公式的xls文件中十分有用
+            workSheet.ForceFormulaRecalculation = true;
+            FileStream file = new FileStream(newFile, FileMode.Create);
+            workBook.Write(file);
+            file.Close();
+        }
+
+
     }
 
 }
