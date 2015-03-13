@@ -55,6 +55,16 @@ namespace Basement.Framework.IExplorer
             }
             return iewObject;
         }
+        /// <summary>
+        /// 根据URL获取IE进程句柄是否存在
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
+        public static bool HasExistIExplorerByUrl(string url)
+        {
+            var obj = WindowObjectByLocationURL(url);
+            return obj != null ? true : false;
+        }
 
         /// <summary>
         /// 根据url退出
@@ -63,7 +73,8 @@ namespace Basement.Framework.IExplorer
         public static void QuitIExplorerByLocationURL(string url)
         {
             SHDocVw.InternetExplorer obj = WindowObjectByLocationURL(url);
-            obj.Quit();
+            if (obj != null)
+                obj.Quit();
         }
 
         public static SHDocVw.InternetExplorer GetWindowObjectByLocationURL(String URL, int? millisecond = null)
